@@ -1,18 +1,17 @@
 // ==== Challenge 1: Write your own closure ====
 // Write a simple closure of your own creation.  Keep it simple!
-const counted = () => {
-  let count = 10;
-  return function(){
-    count = count + 8;
-    return count;
-  }
-};
 
-const newCounter = counted();
-console.log(newCounter());
-console.log(newCounter());
-console.log(newCounter());
-console.log(newCounter());
+function house(){
+  let mother = 'mom';
+  console.log(mother + ' said stop punching your sister!')
+
+  function room(){
+    let father = "dad";
+    console.log(father + 'reminded me that' + mother + 'does not know what she is talking about')
+  }
+  room()
+}
+house()
 
 
 /* STRETCH PROBLEMS, Do not attempt until you have completed all previous tasks for today's project files */
