@@ -1,17 +1,17 @@
 // ==== Challenge 1: Write your own closure ====
 // Write a simple closure of your own creation.  Keep it simple!
 
-function house(){
-  let mother = 'mom';
+function lakeHouse(){
+  let mother = 'mama bear';
   console.log(mother + ' said stop punching your sister!')
 
-  function room(){
-    let father = "dad";
-    console.log(father + 'reminded me that' + mother + 'does not know what she is talking about')
+  function lake(){
+    let father = "papa bear";
+    console.log(father + ' reminded me that ' + mother + ' does not know what she is talking about')
   }
-  room()
+  lake()
 }
-house()
+lakeHouse()
 
 
 /* STRETCH PROBLEMS, Do not attempt until you have completed all previous tasks for today's project files */
