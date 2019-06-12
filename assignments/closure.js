@@ -1,6 +1,18 @@
 // ==== Challenge 1: Write your own closure ====
 // Write a simple closure of your own creation.  Keep it simple!
 
+function lakeHouse(){
+  let mother = 'mama bear';
+  console.log(mother + ' said stop punching your sister!')
+
+  function lake(){
+    let father = "papa bear";
+    console.log(father + ' reminded me that ' + mother + ' does not know what she is talking about')
+  }
+  lake()
+}
+lakeHouse()
+
 
 /* STRETCH PROBLEMS, Do not attempt until you have completed all previous tasks for today's project files */
 
@@ -8,7 +20,20 @@
 // ==== Challenge 2: Create a counter function ====
 const counter = () => {
   // Return a function that when invoked increments and returns a counter variable.
+  let count = 0;
+  return function(){
+    count = count + 1;
+    return count;
+  }
 };
+
+const secondCounter = counter();
+console.log(secondCounter());
+console.log(secondCounter());
+console.log(secondCounter());
+console.log(secondCounter());
+console.log(secondCounter());
+console.log(secondCounter());
 // Example usage: const newCounter = counter();
 // newCounter(); // 1
 // newCounter(); // 2
